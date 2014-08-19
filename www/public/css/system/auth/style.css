@@ -1,0 +1,155 @@
+@font-face {
+	src:url('/public/font/roboto_light_italian/roboto-light-webfont.ttf');
+	src:url('/public/font/roboto_light_italian/roboto-light-webfont.eot');
+	src:url('/public/font/roboto_light_italian/roboto-light-webfont.svg');
+	src:url('/public/font/roboto_light_italian/roboto-light-webfont.woff');
+	font-family: Roboto-light;
+}
+
+@font-face {
+    src:url('/public/font/roboto_bold_italian/roboto-bold-webfont.ttf');
+    src:url('/public/font/roboto_bold_italian/roboto-bold-webfont.eot');
+    src:url('/public/font/roboto_bold_italian/roboto-bold-webfont.svg');
+    src:url('/public/font/roboto_bold_italian/roboto-bold-webfont.woff');
+    font-family: Roboto-bold;
+}
+
+body,html {
+	height: 100%;
+	min-height: 100%;
+}
+body {
+	color: #999;
+	font: 300 14px/1 Roboto-light;
+	position: relative;
+}
+
+/*Login form*/
+.login-form {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 4px;
+	top: 50%;
+	left: 50%;
+	padding-top: 14px;
+	margin-top: -230px;
+	margin-left: -180px;
+	width: 361px;
+}
+.login-wrapper {
+	margin-left: 52px;
+}
+.close-button {
+	background: url("/public/images/system/auth/close.png") no-repeat 0 0;
+    cursor: pointer;
+	margin-right: 6px;
+	height: 20px;
+	width: 20px;
+}
+.login-form h1 {
+	font: 300 1.7em/1 Roboto-light, Arial;
+	color: #4a4a4a;
+	margin: 54px 0 28px;
+
+}
+.login-field:first-child {
+	margin-bottom: 6px;
+}
+.login-field {
+	font-size: 1em;
+	color: #666;
+	border: solid 1px #e0dddd;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 13px;
+	padding-left: 18px;
+	padding-right: 18px;
+	height: 49px;
+	width: 225px;
+}
+.login-site {
+	border: 0;
+	color: #fff;
+	display: block;
+	cursor: pointer;
+	font: 900 1.3em/1 Roboto-bold;
+	margin-top: 21px;
+	text-indent: 59px;
+	text-transform: uppercase;
+	position: relative;
+	height: 50px;
+	width: 260px;
+}
+.login-elements section {
+	position: relative;
+}
+.login-site {
+	background: rgb(76,193,167); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  rgba(76,193,167,1) 0%, rgba(76,193,168,1) 7%, rgba(76,193,169,1) 17%, rgba(76,192,170,1) 30%, rgba(76,191,177,1) 43%, rgba(75,190,184,1) 56%, rgba(75,188,191,1) 69%, rgba(74,188,194,1) 79%, rgba(74,187,196,1) 89%, rgba(74,187,199,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,193,167,1)), color-stop(7%,rgba(76,193,168,1)), color-stop(17%,rgba(76,193,169,1)), color-stop(30%,rgba(76,192,170,1)), color-stop(43%,rgba(76,191,177,1)), color-stop(56%,rgba(75,190,184,1)), color-stop(69%,rgba(75,188,191,1)), color-stop(79%,rgba(74,188,194,1)), color-stop(89%,rgba(74,187,196,1)), color-stop(100%,rgba(74,187,199,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(76,193,167,1) 0%,rgba(76,193,168,1) 7%,rgba(76,193,169,1) 17%,rgba(76,192,170,1) 30%,rgba(76,191,177,1) 43%,rgba(75,190,184,1) 56%,rgba(75,188,191,1) 69%,rgba(74,188,194,1) 79%,rgba(74,187,196,1) 89%,rgba(74,187,199,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(76,193,167,1) 0%,rgba(76,193,168,1) 7%,rgba(76,193,169,1) 17%,rgba(76,192,170,1) 30%,rgba(76,191,177,1) 43%,rgba(75,190,184,1) 56%,rgba(75,188,191,1) 69%,rgba(74,188,194,1) 79%,rgba(74,187,196,1) 89%,rgba(74,187,199,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(76,193,167,1) 0%,rgba(76,193,168,1) 7%,rgba(76,193,169,1) 17%,rgba(76,192,170,1) 30%,rgba(76,191,177,1) 43%,rgba(75,190,184,1) 56%,rgba(75,188,191,1) 69%,rgba(74,188,194,1) 79%,rgba(74,187,196,1) 89%,rgba(74,187,199,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(76,193,167,1) 0%,rgba(76,193,168,1) 7%,rgba(76,193,169,1) 17%,rgba(76,192,170,1) 30%,rgba(76,191,177,1) 43%,rgba(75,190,184,1) 56%,rgba(75,188,191,1) 69%,rgba(74,188,194,1) 79%,rgba(74,187,196,1) 89%,rgba(74,187,199,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cc1a7', endColorstr='#4abbc7',GradientType=0 ); /* IE6-8 */
+	border-radius: 3px;
+}
+.login-site:hover {
+	background: rgb(76,193,167); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzRjYzFhNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjklIiBzdG9wLWNvbG9yPSIjNGJjMWE4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjNDljMGE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjglIiBzdG9wLWNvbG9yPSIjNDljMGE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzklIiBzdG9wLWNvbG9yPSIjNDFiZWFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjNDFiZWFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjIlIiBzdG9wLWNvbG9yPSIjM2JiY2IwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjMzNiYWI0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjMzJiYWI0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJiYjhiOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(76,193,167,1) 1%, rgba(75,193,168,1) 9%, rgba(73,192,169,1) 20%, rgba(73,192,169,1) 28%, rgba(65,190,173,1) 39%, rgba(65,190,173,1) 51%, rgba(59,188,176,1) 62%, rgba(51,186,180,1) 77%, rgba(50,186,180,1) 88%, rgba(43,184,184,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(76,193,167,1)), color-stop(9%,rgba(75,193,168,1)), color-stop(20%,rgba(73,192,169,1)), color-stop(28%,rgba(73,192,169,1)), color-stop(39%,rgba(65,190,173,1)), color-stop(51%,rgba(65,190,173,1)), color-stop(62%,rgba(59,188,176,1)), color-stop(77%,rgba(51,186,180,1)), color-stop(88%,rgba(50,186,180,1)), color-stop(100%,rgba(43,184,184,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(76,193,167,1) 1%,rgba(75,193,168,1) 9%,rgba(73,192,169,1) 20%,rgba(73,192,169,1) 28%,rgba(65,190,173,1) 39%,rgba(65,190,173,1) 51%,rgba(59,188,176,1) 62%,rgba(51,186,180,1) 77%,rgba(50,186,180,1) 88%,rgba(43,184,184,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(76,193,167,1) 1%,rgba(75,193,168,1) 9%,rgba(73,192,169,1) 20%,rgba(73,192,169,1) 28%,rgba(65,190,173,1) 39%,rgba(65,190,173,1) 51%,rgba(59,188,176,1) 62%,rgba(51,186,180,1) 77%,rgba(50,186,180,1) 88%,rgba(43,184,184,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(76,193,167,1) 1%,rgba(75,193,168,1) 9%,rgba(73,192,169,1) 20%,rgba(73,192,169,1) 28%,rgba(65,190,173,1) 39%,rgba(65,190,173,1) 51%,rgba(59,188,176,1) 62%,rgba(51,186,180,1) 77%,rgba(50,186,180,1) 88%,rgba(43,184,184,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(76,193,167,1) 1%,rgba(75,193,168,1) 9%,rgba(73,192,169,1) 20%,rgba(73,192,169,1) 28%,rgba(65,190,173,1) 39%,rgba(65,190,173,1) 51%,rgba(59,188,176,1) 62%,rgba(51,186,180,1) 77%,rgba(50,186,180,1) 88%,rgba(43,184,184,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cc1a7', endColorstr='#2bb8b8',GradientType=0 ); /* IE6-8 */
+}
+.login-elements section::after {
+	content: "";
+	background-image: url("/public/images/system/auth/lock.jpg");
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 60px;
+	z-index: 999;
+}
+.login-elements {
+	margin-bottom: 43px;
+}
+.test {
+    background-color: #d7d7d7;
+}
+.enter-details {
+	background-color: #e8e8e8;
+	border-top: solid 1px #dcdcdc;
+	padding: 32px 0 37px 53px;
+	border-radius: 0 0 4px 4px;
+}
+.enter-details a {
+	color: #666;
+	font: 300 0.85em/1 Roboto-light;
+	text-decoration: none;
+	padding-left: 6px;
+}
+.enter-details span:first-child a {
+	border-right: solid 1px #999;
+	padding-right: 10px;
+	padding-left: 0
+}
+.error {
+    border-color: #ff919d;
+    border-width: 2px;
+    width: 223px;
+}
+
+.right {
+	float: right;
+}

@@ -1,0 +1,16 @@
+body, html, p, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, form, fieldset, td, th, caption, address, textarea, legend {
+    margin: 0;
+    padding: 0;
+}
+body{
+  font: normal 14px/20px Arial;
+  text-align:center;
+}
+input[type=file]{
+  background-color:#FFFFFF;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #777777;
+  box-shadow: 0px 1px 2px 2px #CDD7E0  inset;
+}

@@ -1,0 +1,61 @@
+.content {
+    width: 66%;
+    position: relative;
+    margin-left: 67px;
+}
+.desktop {
+    display: block;
+    padding: 4% 5%;
+    width: 100%;
+}
+.module {
+    display: inline-block;
+    margin: 0 3% 3% 0;
+    width: 21%;
+}
+.module > a {
+    text-decoration: none;
+    font-family: Roboto-bold;
+    color: #666666;
+    font-size: 1.4em;
+    width: 100%;
+    display: block;
+}
+.module-icon {
+    width: 67px;
+    height: 76px;
+    background-image: url(/public/images/system/desktop/module_default.png);
+    background-repeat: no-repeat;
+    margin: 35% auto 0;
+}
+.module-name {
+    display: block;
+    width: 100%;
+    margin: 17% 0 35% 0;
+    text-align: center;
+}
+
+.module:nth-child(8n+1) {
+    background-color: #78dac6;
+}
+.module:nth-child(8n+2) {
+    background-color: #71cea3;
+}
+.module:nth-child(8n+3) {
+    background-color: #77d9cc;
+}
+.module:nth-child(8n+4) {
+    background-color: #74cdd6;
+}
+.module:nth-child(8n+5) {
+    background-color: #77c5d9;
+}
+.module:nth-child(8n+6) {
+    background-color: #73a7d0;
+}
+.module:nth-child(8n+7) {
+    background-color: #a79bd8;
+}
+.module:nth-child(8n+8) {
+    background-color: #da8cc8;
+}

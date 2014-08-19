@@ -1,0 +1,281 @@
+body, html, p, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, form, fieldset, td, th, caption, address, textarea, legend {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#444444;
+    font: normal 14px/20px Arial;
+    background: url(../images/templates/index/bg.png) center repeat;
+}
+#header{
+    margin: 0 auto;
+    width: 1000px;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+.ajax{
+    display: none;
+}
+#kdm_form,#lang_box,#navi_box,#loader_box,#redirection_box,.widget_box{
+    border-radius: 15px 15px 15px 15px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    z-index: 20000;
+    border: 5px solid #999999;
+    background: url(../images/templates/index/bg_form.png) center repeat-y #FFFFFF;
+    color: #000000;
+    overflow: auto;
+    text-align: center;
+    font: normal 21px/32px Verdana;
+
+}
+.widget_box{
+    width: 140px;
+    height: 180px;
+    float:left;
+    margin-right: 10px;
+    font: normal 13px/17px Arial;
+}
+#kdm_form h2{
+    font: normal 25px/30px Verdana;
+    padding: 0px 0 10px 0;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+#kdm_form p{
+    font: normal 18px/22px Verdana;
+    padding: 0px 0 10px 0;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    color: #FF9900
+}
+
+#kdm_form input,
+#kdm_form select,
+#kdm_form textarea{
+    width:300px;
+    height:32px;
+    font: normal 18px/32px Verdana;
+    color:#000000;
+    padding: 0 0 0 32px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #777777;
+    margin-bottom:10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px 2px #CDD7E0  inset;
+    text-align:left;
+}
+#kdm_form select{
+    height:auto;
+}
+
+#kdm_form textarea{
+    height:140px;
+}
+
+#kdm_form input[type=file]{
+    padding:0;
+}
+#kdm_form form div{
+    width:300px;
+    margin-left:300px;
+    text-align:left;
+}
+
+#kdm_form label{
+    display:block;
+    width: 200px;
+}
+
+#kdm_inp_login{
+    background:url(../images/templates/index/sprite32.png) 0 0 no-repeat;
+}
+#kdm_inp_pass{
+    background:url(../images/templates/index/sprite32.png) 0 -32px no-repeat;
+}
+#widgets{
+    margin-top: 10px;
+}
+.widget_box{
+    margin-top: 0px;
+}
+.widget_close{
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../images/templates/index/close.png) 0 0 no-repeat;
+    margin: 2px 0 0 122px;
+}
+.widget_close:hover{
+    background: url(../images/templates/index/close.png) 0 -16px no-repeat;
+}
+#widget_add{
+    display: block;
+    float:left;
+    width: 152px;
+    height: 192px;
+    background: url(../images/templates/index/add.png) 0 0 no-repeat;
+    margin-top: 0px;
+}
+#widget_add:hover{
+    background: url(../images/templates/index/add.png) 0 -192px no-repeat;
+}
+#widget_result{
+    position: absolute;
+    padding: 10px;
+    width:200px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 3px solid #999999;
+    margin: -150px 0 0 400px;
+}
+#kdm_form #kdm_box{
+    padding:10px;
+}
+
+#kdm_form a.kdm_button,
+#kdm_form input[type=submit]{
+    font: bold 16px/48px Verdana;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    width: 209px;
+    height: 53px;
+    display: inline-block;
+    background: url(../images/templates/index/button_send.png) no-repeat 0 0;
+    text-shadow: 1px 1px 0 #FFFF99;
+    color: #444444;
+    border:0;
+    text-align: center;
+    padding:0;
+}
+#kdm_form a.kdm_button:hover{
+    background: url(../images/templates/index/button_send.png) no-repeat 0 -53px;
+    color: #000000;
+}
+#kdm_loader{
+    display: none;
+    position:absolute;
+    margin: 16px 0 0 300px;
+}
+#kdm_form table{
+    width:100%;
+    font: normal 12px/20px Arial;
+}
+#kdm_form table tr.thead td,
+#kdm_form table thead tr th{
+    background-color: #000000;
+    color: #FFFFFF
+}
+#kdm_form table tr.thead td a,
+#kdm_form table thead tr th a{
+    color: #66CCFF
+}
+#kdm_form table tr.light td{
+    background-color: #444444;
+}
+
+#kdm_form table tr td{
+    text-align: left;
+    font: normal 16px/20px Arial;
+}
+#kdm_form table.tlist tr td{
+    font: normal 13px/17px Arial;
+}
+
+#kdm_form table.tlist tr.stat1{
+    color: #FF0000;
+}
+
+#kdm_form table.tlist tr.stat2{
+    color: #339900;
+}
+
+#kdm_form table.tlist tr.stat3{
+    color: #888888;
+}
+
+#kdm_form table tr td input,
+#kdm_form table tr td select,
+#kdm_form table tr td textarea{
+    color: #000000;
+    padding-left: 5px;
+    width: 100%;
+}
+#kdm_form table tr td input[disabled]{
+    background-color:#EEEEEE;
+}
+#kdm_form #main_menu a{
+    display: block;
+    float: left;
+    font: normal 13px/25px Arial;
+    height: 25px;
+    background-color: #555555;
+    padding: 0 20px;
+    margin: 2px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+#kdm_form #main_menu a:hover{
+    background-color: #009900;
+}
+#lang_box,
+#navi_box,
+#loader_box,
+#redirection_box{
+    top: 0;
+    position:fixed;
+    border-radius: 0px 0px 15px 15px;
+    width: 200px;
+    height: 30px;
+    margin: 0;
+    border-top: none;
+    font: normal 12px/30px Verdana;
+}
+#loader_box,#redirection_box{
+    margin-left: 400px;
+}
+
+#lang_box{
+    margin-left: 760px;
+}
+#navi_box{
+    width:200px;
+}
+
+#msgs{
+    position: fixed;
+    width: 246px;
+    height: auto;
+    right: 20px;
+    bottom: 20px;
+}
+#msgs .message_box{
+    width: 246px;
+    height:auto;
+    padding: 10px 0 40px 0;
+    background: url("/public/images/msg_box.png") bottom no-repeat;
+    color: #FFFFFF;
+    margin-top:10px;
+}
+#msgs .message_box a{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#msgs .message_box div{
+    margin:0 10px;
+}
+#msgs .message_box .widget_close{
+    background: url(../images/templates/template/msg_close.png) 0 0 no-repeat;
+    margin: -8px 0 0 225px;
+}
+#msgs .message_box .widget_close:hover{
+    background: url(../images/templates/template/msg_close.png) 0 -16px no-repeat;
+}
