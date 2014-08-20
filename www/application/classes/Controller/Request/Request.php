@@ -81,7 +81,7 @@ class Controller_Request_Request extends Controller_Base {
         if(isset($_SESSION['menedger'])){
             $id_manager= $_SESSION['menedger'];
         }else{
-            $id_manager=1;
+            $id_manager=0;
         }
 
         $this->_content = View::factory('request/index')

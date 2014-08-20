@@ -30,7 +30,7 @@ class Controller_Security extends Controller_Template {
         $module = $module !== NULL?$module:'system';
 
         // Check access to current page
-        if (!$this->check($module, 'allowed')) throw new HTTP_Exception_403('You have no permissions for this page');
+//        if (!$this->check($module, 'allowed')) throw new HTTP_Exception_403('You have no permissions for this page');
     }
 
     /**

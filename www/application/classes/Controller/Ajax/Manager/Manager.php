@@ -9,8 +9,18 @@ class Controller_Ajax_Manager_Manager extends Controller_Ajax {
         $this->json['message_box_ok'] = '.'.$values['status'];
         $this->json['message_box_ok_method'] = 'append';
         $this->json['message_box_ok_separator'] = '';
+        if (!Auth::instance()->logged_in('admin')) {
+            $order = ORM::factory('Request_Users')->where('user_id', '=', Auth::instance()->get_user()->id)->find_all('request_id');
+            foreach ($order as $or) {
+                $request_id[] = $or->request_id;
+
+            }
+            $request = ORM::factory('Request')->where('status', '=', $values['status'])->where('id', 'in', $request_id)->order_by('created', 'DESC');
+        }else{
+
 
         $request = ORM::factory('Request')->where('status', '=', $values['status'])->order_by('created', 'DESC');
+        }
         if (in_array($values['count'], array(5,10,20)))
         {
             $request->limit($values['count']);
@@ -53,12 +63,19 @@ class Controller_Ajax_Manager_Manager extends Controller_Ajax {
                     </li>';
             }
             $colors .= '</ul>';
-
+            $user= $row->user->find('username');
+            $user=$user->username;
+            if(empty($user)){
+                $user='Not determined';
+            }
 
             $this->json['message'][] = '
             <ul class="site-status">
-                <li class="site-name big-width">'.$row->client_name.' '.$row->client_sec_name.'</li>
-                <li class="project-type">'.__($row->type).'</li>
+                <li class="site-name big-width">'.$row->client_name.' '.$row->client_sec_name.'</li>';
+            if(Auth::instance()->logged_in('admin')){
+                $this->json['message'][] .=   '<li class="project-type">'.__($user).'</li>';
+            }
+            $this->json['message'][] .=   '<li class="project-type">'.__($row->type).'</li>
                 <li class="project-date">'.date('d.m.Y', strtotime($row->created)).'</li>
                 <li class="project-info">'.__('Не выдано').'</li>
                 <div class="request-info">

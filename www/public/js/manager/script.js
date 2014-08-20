@@ -196,4 +196,22 @@ $(function(){
         $(this).before(html).prev().fadeIn(300);
 
     })
+
+    $('#lang_q').on('change',function(){
+        var lang=$('#lang_q').val();
+
+
+        $.ajax({
+            type: "POST",
+            url: "/ajax/system/auth/lang",
+            data: {lang:lang},
+            success: function(){
+
+                window.location.reload();
+            }
+        });
+
+    })
+
+
 })

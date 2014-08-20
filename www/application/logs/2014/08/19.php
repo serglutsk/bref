@@ -382,3 +382,104 @@
 2014-08-19 03:53:24 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE ~ APPPATH\classes\Controller\System\Myseting.php [ 31 ] in file:line
 2014-08-19 03:53:24 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2014-08-19 05:10:51 --- CRITICAL: ErrorException [ 1 ]: Call to a member function where() on a non-object ~ APPPATH\classes\Controller\Ajax\System\Auth.php [ 45 ] in file:line
+2014-08-19 05:10:51 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-08-19 05:11:06 --- CRITICAL: ErrorException [ 1 ]: Call to a member function where() on a non-object ~ APPPATH\classes\Controller\Ajax\System\Auth.php [ 45 ] in file:line
+2014-08-19 05:11:06 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-08-19 05:11:56 --- CRITICAL: ErrorException [ 1 ]: Call to a member function where() on a non-object ~ APPPATH\classes\Controller\Ajax\System\Auth.php [ 45 ] in file:line
+2014-08-19 05:11:56 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-08-19 05:12:23 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_Userslink::count() ~ APPPATH\classes\Controller\Ajax\System\Auth.php [ 45 ] in file:line
+2014-08-19 05:12:23 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-08-19 06:50:39 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Database_MySQL_Result::$request_id ~ APPPATH\classes\Controller\Manager\Manager.php [ 36 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:36
+2014-08-19 06:50:39 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(36): Kohana_Core::error_handler(8, 'Undefined prope...', 'Z:\home\bref\ww...', 36, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:36
+2014-08-19 07:05:03 --- CRITICAL: Kohana_Exception [ 0 ]: The request_id property does not exist in the Model_Userslink class ~ MODPATH\orm\classes\Kohana\ORM.php [ 687 ] in Z:\home\bref\www\modules\orm\classes\Kohana\ORM.php:603
+2014-08-19 07:05:03 --- DEBUG: #0 Z:\home\bref\www\modules\orm\classes\Kohana\ORM.php(603): Kohana_ORM->get('request_id')
+#1 Z:\home\bref\www\application\views\manager\index.php(42): Kohana_ORM->__get('request_id')
+#2 Z:\home\bref\www\system\classes\Kohana\View.php(61): include('Z:\home\bref\ww...')
+#3 Z:\home\bref\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\bref\ww...', Array)
+#4 Z:\home\bref\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#5 Z:\home\bref\www\application\views\template.php(89): Kohana_View->__toString()
+#6 Z:\home\bref\www\system\classes\Kohana\View.php(61): include('Z:\home\bref\ww...')
+#7 Z:\home\bref\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\bref\ww...', Array)
+#8 Z:\home\bref\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#9 Z:\home\bref\www\application\classes\Controller\Base.php(103): Kohana_Controller_Template->after()
+#10 Z:\home\bref\www\system\classes\Kohana\Controller.php(87): Controller_Base->after()
+#11 [internal function]: Kohana_Controller->execute()
+#12 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#13 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#14 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#15 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#16 {main} in Z:\home\bref\www\modules\orm\classes\Kohana\ORM.php:603
+2014-08-19 07:10:25 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Database_MySQL_Result::$request_id ~ APPPATH\classes\Controller\Manager\Manager.php [ 37 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:37
+2014-08-19 07:10:25 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(37): Kohana_Core::error_handler(8, 'Undefined prope...', 'Z:\home\bref\ww...', 37, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:37
+2014-08-19 07:11:01 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Database_MySQL_Result::$request_id ~ APPPATH\classes\Controller\Manager\Manager.php [ 37 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:37
+2014-08-19 07:11:01 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(37): Kohana_Core::error_handler(8, 'Undefined prope...', 'Z:\home\bref\ww...', 37, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:37
+2014-08-19 07:15:22 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Database_MySQL_Result::$request_id ~ APPPATH\classes\Controller\Manager\Manager.php [ 36 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:36
+2014-08-19 07:15:22 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(36): Kohana_Core::error_handler(8, 'Undefined prope...', 'Z:\home\bref\ww...', 36, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:36
+2014-08-19 07:29:28 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: request_id ~ APPPATH\classes\Controller\Manager\Manager.php [ 47 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:47
+2014-08-19 07:29:28 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(47): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\bref\ww...', 47, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:47
+2014-08-19 08:25:02 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: count_briefs ~ APPPATH\classes\Controller\Manager\Manager.php [ 73 ] in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:73
+2014-08-19 08:25:02 --- DEBUG: #0 Z:\home\bref\www\application\classes\Controller\Manager\Manager.php(73): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\bref\ww...', 73, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\Controller.php(84): Controller_Manager_Manager->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#4 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#7 {main} in Z:\home\bref\www\application\classes\Controller\Manager\Manager.php:73
+2014-08-19 09:47:48 --- CRITICAL: ErrorException [ 8 ]: Undefined index: HTTP_REFERER ~ APPPATH\views\manager\index.php [ 16 ] in Z:\home\bref\www\application\views\manager\index.php:16
+2014-08-19 09:47:48 --- DEBUG: #0 Z:\home\bref\www\application\views\manager\index.php(16): Kohana_Core::error_handler(8, 'Undefined index...', 'Z:\home\bref\ww...', 16, Array)
+#1 Z:\home\bref\www\system\classes\Kohana\View.php(61): include('Z:\home\bref\ww...')
+#2 Z:\home\bref\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\bref\ww...', Array)
+#3 Z:\home\bref\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\bref\www\application\views\template.php(89): Kohana_View->__toString()
+#5 Z:\home\bref\www\system\classes\Kohana\View.php(61): include('Z:\home\bref\ww...')
+#6 Z:\home\bref\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\bref\ww...', Array)
+#7 Z:\home\bref\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\bref\www\application\classes\Controller\Base.php(103): Kohana_Controller_Template->after()
+#9 Z:\home\bref\www\system\classes\Kohana\Controller.php(87): Controller_Base->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 Z:\home\bref\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Manager_Manager))
+#12 Z:\home\bref\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 Z:\home\bref\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#14 Z:\home\bref\www\index.php(119): Kohana_Request->execute()
+#15 {main} in Z:\home\bref\www\application\views\manager\index.php:16

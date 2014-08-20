@@ -25,8 +25,8 @@ class Controller_System_Myseting extends Controller_Base {
         {
             $this->redirect(URL::site('system/desktop'));
         }
-        $this->_content = View::factory('system/profile/seting');
-//            ->set('modules', ORM::factory('User')->available_modules()->find_all())
+        $this->_content = View::factory('system/profile/seting')
+            ->set('link', ORM::factory('Userslink')->where('user_id','=',$user->id)->find());
 //            ->set('widgets', ORM::factory('User')->available_widgets()->find_all());
         $this->template->content = $this->_content;
 

@@ -151,6 +151,15 @@ return array(
     'About us2' => 'О нас2',
     'About company' => 'О компании',
     'About company2' => 'О компании2',
+    'Not determined' => 'Не определен',
+    'manager' => 'Менеджер',
+    'Show:' => 'Показывать:',
+    'Not issued' => 'Не выдано',
+    'New' => 'Новые',
+    'All' => 'Все',
+    'During' => 'В процесе',
+    'Awaiting' => 'B ожидании',
+    'Approved' => 'Утвержденные',
 
     // Errors
 

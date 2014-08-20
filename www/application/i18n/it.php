@@ -118,6 +118,7 @@ return array(
 
     'Age' => 'Eta’',
     'all' => 'Tutto',
+
     'Gender' => 'Sesso',
     'both' => 'ENTRAMBI',
     'male' => 'MASCHI',
@@ -130,6 +131,16 @@ return array(
     'Poland' => 'Poland',
     'Russia' => 'Russia',
     'Ukraine' => 'Ukraine',
+    'Not determined' => 'Non determinato',
+    'manager' => 'Manager',
+    'Show:' => 'Mostra:',
+    'Not issued' => 'Non rilasciato',
+    'New' => 'Nuovo',
+    'new' => 'nuovo',
+    'All' => 'Tutto',
+    'During' => 'Durante',
+    'Awaiting' => 'In attesa di',
+    'Approved' => 'Approvato',
 
     'General Information about competitors' => 'Informazioni generali SUI concorrenti',
     'Main competitors' => 'CONCORENTI PRINCIPALI',

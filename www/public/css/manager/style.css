@@ -578,3 +578,13 @@ ul.colors {
 .colors .color-30 label{background-position: -150px -29px;}
 .colors .color-31 label{background-position: -180px -29px;}
 .colors .color-32 label{background-position: -210px -29px;}
+#lang_q{
+    height: 30px;
+    border: 0;
+    background-color: #e9e9e9;
+    font-family: roboto-black;
+    color: dimgray;
+    margin-top: -8px;
+    width: 60px;
+    padding: 5px;
+}
